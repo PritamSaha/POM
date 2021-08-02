@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Orangehrmlive">
+
+<listeners>
+<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+<listener class-name="listeners.CustomListeners"/>
+</listeners>
+  <test name="LoginTest">
+    <classes>
+      <class name="testcases.LoginTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="NewUser">
+		<classes>
+			<class name="testcases.NewUser" />
+		</classes>
+  </test> <!-- Test -->
+<test name="UpdateUser">
+		<classes>
+			<class name="testcases.UpdateUser" />
+		</classes>
+	</test> <!-- Test -->
+				<test name="DeleteUser">
+		<classes>
+			<class name="testcases.DeleteUser" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
